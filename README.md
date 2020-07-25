@@ -9,11 +9,11 @@
 
 </br>
 
-Stay Save. <img src="https://raw.githubusercontent.com/Hilly-Yee/Hilly-Yee/master/img/Gloves-Freepik.svg" width="25" height="25">
+Stay Save. <img src="https://raw.githubusercontent.com/Hilly-Yee/Hilly-Yee/master/img/Gloves-Freepik.svg" width="25" height="20">
 </br>
-Keep Distancing. <img src="https://raw.githubusercontent.com/Hilly-Yee/Hilly-Yee/master/img/Social-Distancing-catkuro.svg" width="25" height="25">
+Keep Distancing. <img src="https://raw.githubusercontent.com/Hilly-Yee/Hilly-Yee/master/img/Social-Distancing-catkuro.svg" width="25" height="20">
 </br>
-Protect Yourself. <img src="https://raw.githubusercontent.com/Hilly-Yee/Hilly-Yee/master/img/Mask-monkik.svg" width="25" height="25">
+Protect Yourself. <img src="https://raw.githubusercontent.com/Hilly-Yee/Hilly-Yee/master/img/Mask-monkik.svg" width="25" height="20">
 
 </br>
 
