@@ -17,7 +17,7 @@ Protect Yourself. <img src="https://raw.githubusercontent.com/Hilly-Yee/Hilly-Ye
 
 </br>
 
-Choose The Best Way to Embrace Your Every Day.
+ʙᴇ ʜᴀᴘᴘʏ.
 
 </br>
 
