@@ -11,8 +11,7 @@
 
 </br>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Hilly-Yee&layout=compact)](https://github.com/Hilly-Yee)
-
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hilly-Yee&layout=compact&show_icons=true&hide_border=true&title_color=48b5e0">
 
 </br>
 
