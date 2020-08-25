@@ -1,6 +1,8 @@
 ## Hi <img src="https://raw.githubusercontent.com/Hilly-Yee/Hilly-Yee/master/img/Shake-Hands-Facebook.png" width="25" height="25">
 
+>ʙᴇ ʜᴀᴘᴘʏ.
 
+</br>
 
 - Press this [<img src="https://raw.githubusercontent.com/Hilly-Yee/Hilly-Yee/master/img/Earth-Globe-Vectors%20Market.svg" width="25" height="20">](https://www.hiio.me) to enter my Website.
 - You can find my Photographs via [<img src="https://raw.githubusercontent.com/Hilly-Yee/Hilly-Yee/master/img/Photos-DinosoftLabs.svg" width="25" height="20">](https://photo.hiio.me).
@@ -20,10 +22,5 @@ Keep Distancing. <img src="https://raw.githubusercontent.com/Hilly-Yee/Hilly-Yee
 </br>
 Protect Yourself. <img src="https://raw.githubusercontent.com/Hilly-Yee/Hilly-Yee/master/img/Mask-monkik.svg" width="25" height="20">
 
-</br>
-
-ʙᴇ ʜᴀᴘᴘʏ.
-
-</br>
 
 :)
