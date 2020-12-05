@@ -2,9 +2,6 @@
 
 > Nice to meet you.
 
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
-
 - Founder of [iUoB](https://www.iuob.uk/). 
 - Student. (Lifetime)
 - Web Maker. 
