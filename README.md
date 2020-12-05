@@ -23,10 +23,6 @@ To know more:
 
 ---
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harry-Yep&layout=compact&show_icons=true&hide_border=true&title_color=48b5e0">
-
----
-
 Stay Save. <img src="https://raw.githubusercontent.com/Harry-Yep/Harry-Yep/master/img/Gloves-Freepik.svg" width="25" height="20">
 </br>
 Keep Distancing. <img src="https://raw.githubusercontent.com/Harry-Yep/Harry-Yep/master/img/Social-Distancing-catkuro.svg" width="25" height="20">
