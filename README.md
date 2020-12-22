@@ -2,7 +2,6 @@
 
 > Nice to meet you.
 
-- Founder of [iUoB](https://www.iuob.uk/). 
 - Student. (Lifetime)
 - Web Maker. 
 - Apple Dev.
