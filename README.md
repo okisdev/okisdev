@@ -11,6 +11,8 @@
 
 I am exploring everything.
 
+![Metrics](https://github.com/Harry-Yep/Harry-Yep/blob/master/metrics.additional.svg)
+
 ---
 
 To know more:
