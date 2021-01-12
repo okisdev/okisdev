@@ -5,7 +5,7 @@
 - Student. (Lifetime)
 - Dev.
 
-![Metrics](https://github.com/Harry-Yep/Harry-Yep/blob/master/metrics.plugin.isocalendar.fullyear.svg)
+![Metrics](https://github.com/Harry-Yep/Harry-Yep/blob/master/metrics.svg)
 
 ---
 
