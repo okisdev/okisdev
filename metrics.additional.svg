@@ -875,15 +875,6 @@
               <div class="entry">
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                31
-                
-                  <div class="bottom">Dec.</div>
-                
-              </div>
-            
-              <div class="entry">
-                <span class="value"></span>
-                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
                 1
                 
                   <div class="bottom">Jan.</div>
@@ -974,20 +965,18 @@
                 
               </div>
             
+              <div class="entry">
+                <span class="value"></span>
+                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
+                14
+                
+              </div>
+            
           </div>
         </section>
         <section class="column chart">
           <h3>New stargazers per day</h3>
           <div class="chart-bars">
-            
-              <div class="entry">
-                <span class="value"></span>
-                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                31
-                
-                <div class="bottom">Dec.</div>
-                
-              </div>
             
               <div class="entry">
                 <span class="value"></span>
@@ -1082,6 +1071,13 @@
                 
               </div>
             
+              <div class="entry">
+                <span class="value"></span>
+                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
+                14
+                
+              </div>
+            
           </div>
         </section>
       </div>
@@ -1107,7 +1103,7 @@
                   
                   <div class="name">
                     <span>starship/starship</span>
-                    <span>starred 4 hours ago</span>
+                    <span>starred 5 hours ago</span>
                   </div>
                 </div>
                 <div class="field description">
@@ -1154,7 +1150,7 @@
                   
                   <div class="name">
                     <span>halo-dev/halo</span>
-                    <span>starred 4 hours ago</span>
+                    <span>starred 5 hours ago</span>
                   </div>
                 </div>
                 <div class="field description">
