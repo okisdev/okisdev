@@ -14,7 +14,7 @@ jobs:
       - name: Personal metrics
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.svg
+          filename: img/metrics/metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: "header, repositories"
@@ -28,7 +28,7 @@ jobs:
       - name: Personal metrics (additional)
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.additional.svg
+          filename: img/metrics/metrics.additional.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -50,7 +50,7 @@ jobs:
       - name: Classic template
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.classic.svg
+          filename: img/metrics/metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: "header, repositories"
@@ -64,7 +64,7 @@ jobs:
         uses: lowlighter/metrics@master
         with:
           template: terminal
-          filename: metrics.terminal.svg
+          filename: img/metrics/metrics.terminal.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: "header, metadata"
@@ -78,7 +78,7 @@ jobs:
       - name: PageSpeed plugin
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.pagespeed.svg
+          filename: img/metrics/metrics.plugin.pagespeed.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -94,7 +94,7 @@ jobs:
       - name: PageSpeed plugin (detailed)
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.pagespeed.detailed.svg
+          filename: img/metrics/metrics.plugin.pagespeed.detailed.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -111,7 +111,7 @@ jobs:
       - name: PageSpeed plugin (screenshot)
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.pagespeed.screenshot.svg
+          filename: img/metrics/metrics.plugin.pagespeed.screenshot.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -127,7 +127,7 @@ jobs:
       - name: Habits plugin
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.habits.svg
+          filename: img/metrics/metrics.plugin.habits.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -143,7 +143,7 @@ jobs:
       - name: Habits plugin (facts)
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.habits.facts.svg
+          filename: img/metrics/metrics.plugin.habits.facts.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -159,7 +159,7 @@ jobs:
       - name: Habits plugin (charts)
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.habits.charts.svg
+          filename: img/metrics/metrics.plugin.habits.charts.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -175,7 +175,7 @@ jobs:
       - name: Languages plugin
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.languages.svg
+          filename: img/metrics/metrics.plugin.languages.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -190,7 +190,7 @@ jobs:
       - name: Follow-up plugin
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.followup.svg
+          filename: img/metrics/metrics.plugin.followup.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -205,7 +205,7 @@ jobs:
       - name: Lines plugin
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.lines.svg
+          filename: img/metrics/metrics.plugin.lines.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: "repositories"
@@ -221,7 +221,7 @@ jobs:
       - name: Posts plugin
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.posts.svg
+          filename: img/metrics/metrics.plugin.posts.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -235,7 +235,7 @@ jobs:
       - name: Isocalendar plugin
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.isocalendar.svg
+          filename: img/metrics/metrics.plugin.isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -248,7 +248,7 @@ jobs:
       - name: Isocalendar plugin (full year)
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.isocalendar.fullyear.svg
+          filename: img/metrics/metrics.plugin.isocalendar.fullyear.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -262,7 +262,7 @@ jobs:
       - name: Gists plugin
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.gists.svg
+          filename: img/metrics/metrics.plugin.gists.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -275,7 +275,7 @@ jobs:
       - name: Topics plugin
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.topics.svg
+          filename: img/metrics/metrics.plugin.topics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -291,7 +291,7 @@ jobs:
       - name: Topics plugin (mastered)
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.topics.mastered.svg
+          filename: img/metrics/metrics.plugin.topics.mastered.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -305,7 +305,7 @@ jobs:
       - name: Stargazers plugin
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.stargazers.svg
+          filename: img/metrics/metrics.plugin.stargazers.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -318,7 +318,7 @@ jobs:
       - name: Stars plugin
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.stars.svg
+          filename: img/metrics/metrics.plugin.stars.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -332,7 +332,7 @@ jobs:
       - name: Activity plugin
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.activity.svg
+          filename: img/metrics/metrics.plugin.activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -351,7 +351,7 @@ jobs:
       - name: Plugin error example
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.error.svg
+          filename: img/metrics/metrics.plugin.error.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -367,7 +367,7 @@ jobs:
       - name: People plugin (followers)
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.people.svg
+          filename: img/metrics/metrics.plugin.people.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -381,7 +381,7 @@ jobs:
       - name: People plugin (followers)
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.people.followers.svg
+          filename: img/metrics/metrics.plugin.people.followers.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -396,7 +396,7 @@ jobs:
       - name: People plugin (following)
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.people.following.svg
+          filename: img/metrics/metrics.plugin.people.following.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
@@ -417,7 +417,7 @@ jobs:
       # Display followers
       - uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin._.svg
+          filename: img/metrics/metrics.plugin._.svg
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
