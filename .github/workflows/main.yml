@@ -12,7 +12,7 @@ jobs:
     steps:
 
       - name: Personal metrics
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -26,7 +26,7 @@ jobs:
           use_prebuilt_image: master 
           
       - name: Personal metrics (additional)
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.additional.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -48,7 +48,7 @@ jobs:
 
       # Classic template with header and repositories sections
       - name: Classic template
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -61,7 +61,7 @@ jobs:
 
       # Terminal template with header and metadata sections
       - name: Terminal template
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           template: terminal
           filename: img/metrics/metrics.terminal.svg
@@ -76,7 +76,7 @@ jobs:
       # Don't forget to update your GitHub profile with your website
       # Token is optional but advised
       - name: PageSpeed plugin
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.pagespeed.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -92,7 +92,7 @@ jobs:
       # Don't forget to update your GitHub profile with your website
       # Token is optional but advised
       - name: PageSpeed plugin (detailed)
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.pagespeed.detailed.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -109,7 +109,7 @@ jobs:
       # Don't forget to update your GitHub profile with your website
       # Token is optional but advised
       - name: PageSpeed plugin (screenshot)
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.pagespeed.screenshot.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -125,7 +125,7 @@ jobs:
       # Display coding habits and recent activity
       # Don't forget to setup timezone for accurate metrics
       - name: Habits plugin
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.habits.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -141,7 +141,7 @@ jobs:
       # Display coding habits and recent activity (only facts section)
       # Don't forget to setup timezone for accurate metrics
       - name: Habits plugin (facts)
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.habits.facts.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -157,7 +157,7 @@ jobs:
       # Display coding habits and recent activity (only charts section)
       # Don't forget to setup timezone for accurate metrics
       - name: Habits plugin (charts)
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.habits.charts.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -173,7 +173,7 @@ jobs:
       # Display most used languages
       # You can ignore some languages and skip some repositories if you want
       - name: Languages plugin
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.languages.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -188,7 +188,7 @@ jobs:
 
       # Display ratio of open/closed/merged issues and pull requests 
       - name: Follow-up plugin
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.followup.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -203,7 +203,7 @@ jobs:
       # Note that :
       # - This is part of "repositories" section, so you need to enable it
       - name: Lines plugin
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.lines.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -219,7 +219,7 @@ jobs:
       # - "plugin_posts_source" is required
       # - With "dev.to" as source, your GitHub username is directly used
       - name: Posts plugin
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.posts.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -233,7 +233,7 @@ jobs:
 
       # Display isometric calendar (180 days)
       - name: Isocalendar plugin
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -246,7 +246,7 @@ jobs:
 
       # Display isometric calendar (365 days)
       - name: Isocalendar plugin (full year)
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.isocalendar.fullyear.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -260,7 +260,7 @@ jobs:
 
       # Display gists metrics
       - name: Gists plugin
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.gists.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -273,7 +273,7 @@ jobs:
 
       # Display starred topics (as labels)
       - name: Topics plugin
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.topics.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -289,7 +289,7 @@ jobs:
       # Note that : 
       # - Only topics with an icon will be displayed (most of majors topics have one anyway)
       - name: Topics plugin (mastered)
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.topics.mastered.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -303,7 +303,7 @@ jobs:
           
       # Display your stargazers evolutions
       - name: Stargazers plugin
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.stargazers.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -316,7 +316,7 @@ jobs:
           
       # Display your latest starred repositories
       - name: Stars plugin
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.stars.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -330,7 +330,7 @@ jobs:
           
       # Display recent activity metrics
       - name: Activity plugin
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -349,7 +349,7 @@ jobs:
       # The "METRICS_TOKEN" does not contains the "public_repo" scope, which is required for "plugin_projects"
       # It will display an "Insufficient token rights" error
       - name: Plugin error example
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.error.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -365,7 +365,7 @@ jobs:
       # - To respect privacy of users (as their faces could be displayed on every fork of this repository and on lowlighter/metrics), 
       #   identicons option is used to hide their avatar, but you probably want to remove it if you use this plugin
       - name: People plugin (followers)
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.people.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -379,7 +379,7 @@ jobs:
           
       # Display followers and followed users (only followers)
       - name: People plugin (followers)
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.people.followers.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -394,7 +394,7 @@ jobs:
 
       # Display followers and followed users (only following)
       - name: People plugin (following)
-        uses: lowlighter/metrics@master
+        uses: Harry-Yep/metrics@master
         with:
           filename: img/metrics/metrics.plugin.people.following.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -406,20 +406,3 @@ jobs:
           plugins_errors_fatal: yes
           config_timezone: Europe/London 
           use_prebuilt_image: master
-
-# The job below is used to test other branch features still in developpement
-# ⚠️ Don't use it unless you know what you're doing !
-  github-metrics-prerelease:
-    runs-on: ubuntu-latest
-    if: "github.repository == 'lowlighter/lowlighter' && false"
-    steps:
-
-      # Display followers
-      - uses: lowlighter/metrics@master
-        with:
-          filename: img/metrics/metrics.plugin._.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: ""
-          plugins_errors_fatal: yes
-          config_timezone: Europe/London
