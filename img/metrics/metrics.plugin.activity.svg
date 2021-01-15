@@ -642,7 +642,7 @@
                 
                   <div class="field">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/></svg>
-                    Pushed 1 commit in <div class="repo">HodeUK/labs.hode.uk</div>
+                    Pushed 1 commit in <div class="repo">HodeUK/url.hode.uk</div>
                   </div>
                   <div class="details">
                     
@@ -650,8 +650,41 @@
                     
                     
                       <div class="commit">
-                        <div class="sha">#ba95b26</div>
-                        <div class="message">Update index.html</div>
+                        <div class="sha">#46f1e94</div>
+                        <div class="message">Update .gitignore</div>
+                      </div>
+                    
+                  </div>
+                
+                
+                
+                
+              </section>
+            </div>
+          
+            <div class="row fill-width">
+              <section class="activity">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                  <div class="field">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/></svg>
+                    Pushed 1 commit in <div class="repo">HodeUK/url.hode.uk</div>
+                  </div>
+                  <div class="details">
+                    
+                      <div>on branch <div class="code">master</div></div>
+                    
+                    
+                      <div class="commit">
+                        <div class="sha">#070dd01</div>
+                        <div class="message">Update redirects.yml</div>
                       </div>
                     
                   </div>
@@ -683,8 +716,8 @@
                     
                     
                       <div class="commit">
-                        <div class="sha">#96d1713</div>
-                        <div class="message">add favicon</div>
+                        <div class="sha">#55f1749</div>
+                        <div class="message">add url.hode.uk</div>
                       </div>
                     
                   </div>
@@ -716,41 +749,8 @@
                     
                     
                       <div class="commit">
-                        <div class="sha">#f3f9b3a</div>
-                        <div class="message">change style</div>
-                      </div>
-                    
-                  </div>
-                
-                
-                
-                
-              </section>
-            </div>
-          
-            <div class="row fill-width">
-              <section class="activity">
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                  <div class="field">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/></svg>
-                    Pushed 1 commit in <div class="repo">HodeUK/labs.hode.uk</div>
-                  </div>
-                  <div class="details">
-                    
-                      <div>on branch <div class="code">master</div></div>
-                    
-                    
-                      <div class="commit">
-                        <div class="sha">#876e57b</div>
-                        <div class="message">Update index.html</div>
+                        <div class="sha">#8c3b489</div>
+                        <div class="message">Create README.md</div>
                       </div>
                     
                   </div>
