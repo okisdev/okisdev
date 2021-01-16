@@ -875,16 +875,9 @@
               <div class="entry">
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                2
+                3
                 
                   <div class="bottom">Jan.</div>
-                
-              </div>
-            
-              <div class="entry">
-                <span class="value"></span>
-                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                3
                 
               </div>
             
@@ -969,6 +962,13 @@
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
                 15
+                
+              </div>
+            
+              <div class="entry">
+                <span class="value"></span>
+                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
+                16
                 
               </div>
             
@@ -981,16 +981,9 @@
               <div class="entry">
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                2
+                3
                 
                 <div class="bottom">Jan.</div>
-                
-              </div>
-            
-              <div class="entry">
-                <span class="value"></span>
-                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                3
                 
               </div>
             
@@ -1075,6 +1068,13 @@
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
                 15
+                
+              </div>
+            
+              <div class="entry">
+                <span class="value"></span>
+                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
+                16
                 
               </div>
             
