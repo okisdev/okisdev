@@ -1,3 +1,10 @@
+<!--CSS-->
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+
+
+
 ## Hi &nbsp; <img src="./img/Shake-Hands-Facebook.png" width="25" height="25"> &nbsp; [Harry](https://www.harrly.com)'s Here.
 
 > Nice to meet you.
@@ -17,7 +24,7 @@ I am exploring everything.
 
 To know more:
 
-- Wesbite: [<img src="./img/Earth-Globe-Vectors%20Market.svg" width="25" height="20">](https://www.harrly.com)
+- Wesbite: <i class="fas fa-home"></i>
 - Photo: [<img src="./img/Photos-DinosoftLabs.svg" width="25" height="20">](https://photo.harrly.com).
 - About: [<img src="./img/About-bqlqn.svg" width="25" height="20">](https://blog.harrly.com/about).
 - Contact: [<img src="./img/Mail-Pixel%20perfect.svg" width="25" height="20">](mailto:hi@hiio.me)
