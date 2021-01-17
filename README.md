@@ -24,10 +24,10 @@ I am exploring everything.
 
 To know more:
 
-- Wesbite: <i class="fas fa-home"></i>
-- Photo: [<img src="./img/Photos-DinosoftLabs.svg" width="25" height="20">](https://photo.harrly.com).
-- About: [<img src="./img/About-bqlqn.svg" width="25" height="20">](https://blog.harrly.com/about).
-- Contact: [<img src="./img/Mail-Pixel%20perfect.svg" width="25" height="20">](mailto:hi@hiio.me)
+- [Wesbite](https://www.harrly.com)
+- [Photo](https://photo.harrly.com)
+- [About](https://blog.harrly.com/about)
+- [Contact](mailto:hi@hiio.me)
 
 ---
 
