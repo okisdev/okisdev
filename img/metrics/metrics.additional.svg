@@ -704,8 +704,8 @@
             </div>
           
             <div class="entry">
-              <span class="value">4</span>
-              <div class="bar" style="height: 6.666666666666667px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+              <span class="value">6</span>
+              <div class="bar" style="height: 10px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
               11
             </div>
           
@@ -828,8 +828,8 @@
               </div>
             
               <div class="entry">
-                <span class="value">8</span>
-                <div class="bar" style="height: 11.76470588235294px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                <span class="value">10</span>
+                <div class="bar" style="height: 14.705882352941178px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                 Sat
               </div>
             
@@ -843,19 +843,19 @@
             
               <div class="entry">
                 <span class="name">Objective</span>
-                <div class="bar" style="width: 53.704%; background-color: var(--color-calendar-graph-day-L3-bg)"></div>
-                <span class="value">67%</span>
+                <div class="bar" style="width: 51.248000000000005%; background-color: var(--color-calendar-graph-day-L3-bg)"></div>
+                <span class="value">64%</span>
               </div>
             
               <div class="entry">
                 <span class="name">HTML</span>
-                <div class="bar" style="width: 23.032%; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
-                <span class="value">29%</span>
+                <div class="bar" style="width: 25.639999999999997%; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                <span class="value">32%</span>
               </div>
             
               <div class="entry">
                 <span class="name">CSS</span>
-                <div class="bar" style="width: 3.2560000000000002%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                <div class="bar" style="width: 3.112%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                 <span class="value">4%</span>
               </div>
             
@@ -1115,7 +1115,7 @@
                   
                   <div class="name">
                     <span>TelegramMessenger/Telegram-iOS</span>
-                    <span>starred 10 hours ago</span>
+                    <span>starred 11 hours ago</span>
                   </div>
                 </div>
                 <div class="field description">
@@ -1194,7 +1194,7 @@
                   
                   <div class="name">
                     <span>kon9chunkit/GitHub-Chinese-Top-Charts</span>
-                    <span>starred 4 days ago</span>
+                    <span>starred 5 days ago</span>
                   </div>
                 </div>
                 <div class="field description">
