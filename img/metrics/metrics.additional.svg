@@ -903,16 +903,9 @@
               <div class="entry">
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                10
+                11
                 
                   <div class="bottom">Jan.</div>
-                
-              </div>
-            
-              <div class="entry">
-                <span class="value"></span>
-                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                11
                 
               </div>
             
@@ -997,6 +990,13 @@
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
                 23
+                
+              </div>
+            
+              <div class="entry">
+                <span class="value"></span>
+                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
+                24
                 
               </div>
             
@@ -1009,16 +1009,9 @@
               <div class="entry">
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                10
+                11
                 
                 <div class="bottom">Jan.</div>
-                
-              </div>
-            
-              <div class="entry">
-                <span class="value"></span>
-                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                11
                 
               </div>
             
@@ -1103,6 +1096,13 @@
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
                 23
+                
+              </div>
+            
+              <div class="entry">
+                <span class="value"></span>
+                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
+                24
                 
               </div>
             
@@ -1131,7 +1131,7 @@
                   
                   <div class="name">
                     <span>TelegramMessenger/Telegram-iOS</span>
-                    <span>starred 23 hours ago</span>
+                    <span>starred 24 hours ago</span>
                   </div>
                 </div>
                 <div class="field description">
