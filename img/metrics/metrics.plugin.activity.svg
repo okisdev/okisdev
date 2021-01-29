@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="345" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="295" class="">
 
   <defs><style/></defs>
   <style>/* SVG global context */
@@ -743,8 +743,8 @@
                     
                     
                       <div class="commit">
-                        <div class="sha">#aeca0bb</div>
-                        <div class="message">add sitemap</div>
+                        <div class="sha">#9f09b8d</div>
+                        <div class="message">edit</div>
                       </div>
                     
                   </div>
@@ -776,8 +776,8 @@
                     
                     
                       <div class="commit">
-                        <div class="sha">#0539d63</div>
-                        <div class="message">add pangu</div>
+                        <div class="sha">#bdcdcd1</div>
+                        <div class="message">edit</div>
                       </div>
                     
                   </div>
@@ -809,8 +809,8 @@
                     
                     
                       <div class="commit">
-                        <div class="sha">#d7ead5d</div>
-                        <div class="message">edit config</div>
+                        <div class="sha">#8b08a35</div>
+                        <div class="message">add solutions</div>
                       </div>
                     
                   </div>
@@ -834,33 +834,16 @@
                 
                   <div class="field">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/></svg>
-                    Pushed 4 commits in <div class="repo">iUoB/help.iuob.uk</div>
+                    Pushed 1 commit in <div class="repo">iUoB/help.iuob.uk</div>
                   </div>
                   <div class="details">
                     
-                      <div>on branch <div class="code">main</div></div>
+                      <div>on branch <div class="code">master</div></div>
                     
                     
                       <div class="commit">
-                        <div class="sha">#bfa246b</div>
-                        <div class="message">edit config</div>
-                      </div>
-                    
-                      <div class="commit">
-                        <div class="sha">#8624044</div>
-                        <div class="message">edit config</div>
-                      </div>
-                    
-                      <div class="commit">
-                        <div class="sha">#1dd6c69</div>
-                        <div class="message">edit config</div>
-                      </div>
-                    
-                      <div class="commit">
-                        <div class="sha">#327de30</div>
-                        <div class="message">Merge pull request #1 from iUoB/master
-
-update</div>
+                        <div class="sha">#51bc1df</div>
+                        <div class="message">add pwa</div>
                       </div>
                     
                   </div>
