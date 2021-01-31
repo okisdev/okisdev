@@ -5,7 +5,7 @@
 
 
 
-## Hi &nbsp; <img src="./img/Shake-Hands-Facebook.png" width="25" height="25"> &nbsp; [Harry](https://www.harrly.com)'s Here.
+## Hi &nbsp; [Harry](https://www.harrly.com)'s Here.
 
 > Fresh Off the Boat. && Nice to meet you.
 
