@@ -745,8 +745,8 @@
         <div class="chart-bars">
           
             <div class="entry">
-              <span class="value">8</span>
-              <div class="bar" style="height: 25px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+              <span class="value">10</span>
+              <div class="bar" style="height: 31.25px; background-color: var(--color-calendar-graph-day-L3-bg)"></div>
               00
             </div>
           
@@ -905,8 +905,8 @@
               </div>
             
               <div class="entry">
-                <span class="value">8</span>
-                <div class="bar" style="height: 12.5px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                <span class="value">10</span>
+                <div class="bar" style="height: 15.625px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                 Mon
               </div>
             
@@ -988,16 +988,9 @@
               <div class="entry">
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                18
+                19
                 
                   <div class="bottom">Jan.</div>
-                
-              </div>
-            
-              <div class="entry">
-                <span class="value"></span>
-                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                19
                 
               </div>
             
@@ -1082,6 +1075,15 @@
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
                 31
+                
+              </div>
+            
+              <div class="entry">
+                <span class="value"></span>
+                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
+                1
+                
+                  <div class="bottom">Feb.</div>
                 
               </div>
             
@@ -1094,16 +1096,9 @@
               <div class="entry">
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                18
+                19
                 
                 <div class="bottom">Jan.</div>
-                
-              </div>
-            
-              <div class="entry">
-                <span class="value"></span>
-                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
-                19
                 
               </div>
             
@@ -1188,6 +1183,15 @@
                 <span class="value"></span>
                 <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
                 31
+                
+              </div>
+            
+              <div class="entry">
+                <span class="value"></span>
+                <div class="bar" style="height: NaNpx; background-color: var(--color-calendar-graph-day-LNaN-bg)"></div>
+                1
+                
+                <div class="bottom">Feb.</div>
                 
               </div>
             
@@ -1216,7 +1220,7 @@
                   
                   <div class="name">
                     <span>nativefier/nativefier</span>
-                    <span>starred 4 hours ago</span>
+                    <span>starred 5 hours ago</span>
                   </div>
                 </div>
                 <div class="field description">
