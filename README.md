@@ -5,22 +5,21 @@
 
 ## Hi, [Harry](https://www.harrly.com) is here.
 
-> Fresh Off the Boat. && Nice to meet you.
+> Fresh off the Boat. && Nice to meet you.
 
 - Student. (Lifetime)
 - Dev.
 
 ---
 
-### I am exploring everything.
-
-Using these Technologies:
+Use these techniques to explore:
 
 ![Vue.JS](https://img.shields.io/badge/-Vue.js-35495c.svg?&style=flat-square&logo=vue.js&logoColor=default)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=JavaScript&logoColor=default)
-![HTML](https://img.shields.io/badge/HTML5-white?style=flat-square&logo=HTML5&logoColor=default)
+![HTML5](https://img.shields.io/badge/HTML5-white?style=flat-square&logo=HTML5&logoColor=default)
 ![Java](https://img.shields.io/badge/Java-ea3323?style=flat-square&logo=Java&logoColor=default)
 ![Python](https://img.shields.io/badge/Python-375a81?style=flat-square&logo=Python&logoColor=default)
+![MySQL](https://img.shields.io/badge/MySQL-white?style=flat-square&logo=MySQL&logoColor=default)
 ...
 
 Working with my friends:
