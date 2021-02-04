@@ -12,6 +12,10 @@
 - Student. (Lifetime)
 - Dev.
 
+<center class="half">
+    <img src="./img/metrics/metrics.svg" length="50"/><img src="./img/metrics/metrics.additional.svg" length="50"/>
+</center>
+
 ![Metrics](./img/metrics/metrics.svg)
 
 ---
