@@ -385,6 +385,7 @@
     align-items: center;
     flex-direction: row;
     width: 100%;
+    min-height: 1rem;
   }
 
   .chart-bars.horizontal .entry .name {
@@ -813,7 +814,7 @@
           <div class="field">
             <div class="audit text">
               
-                0.75 s
+                0.74 s
               
             </div>
             
