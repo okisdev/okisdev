@@ -432,20 +432,20 @@ jobs:
           plugin_music_limit: 2
           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
-      # Display recently played music
-      # Note that in this mode "plugin_music_mode", "plugin_music_provider" and "plugin_music_token" are all required
-      - name: 🎼 Music plugin (recent)
-        uses: Harry-Yep/metrics@master
-        with:
-          filename: img/metrics/metrics.plugin.music.recent.svg
-          token: NOT_NEEDED
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          plugin_music: yes
-          plugin_music_provider: spotify
-          plugin_music_mode: recent
-          plugin_music_token: ${{ secrets.SPOTIFY_TOKENS }}
-          plugin_music_limit: 2
-          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # # Display recently played music
+      # # Note that in this mode "plugin_music_mode", "plugin_music_provider" and "plugin_music_token" are all required
+      # - name: 🎼 Music plugin (recent)
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.plugin.music.recent.svg
+      #     token: NOT_NEEDED
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     plugin_music: yes
+      #     plugin_music_provider: apple
+      #     plugin_music_mode: recent
+      #     plugin_music_token: ${{ secrets.APPLE_TOKENS }}
+      #     plugin_music_limit: 2
+      #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
 
@@ -656,19 +656,19 @@ jobs:
       # ======================================================================================
 
 
-      # 🐤 Latest tweets
+      # # 🐤 Latest tweets
 
-      # Display your latest tweets (token required)
-      # Don't forget to update your GitHub profile with your twitter username
-      - name: 🐤 Tweets plugin
-        uses: Harry-Yep/metrics@master
-        with:
-          filename: img/metrics/metrics.plugin.tweets.svg
-          token: NOT_NEEDED
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          plugin_tweets: yes
-          plugin_tweets_token: ${{ secrets.TWITTER_TOKEN }}
-          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # # Display your latest tweets (token required)
+      # # Don't forget to update your GitHub profile with your twitter username
+      # - name: 🐤 Tweets plugin
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.plugin.tweets.svg
+      #     token: NOT_NEEDED
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     plugin_tweets: yes
+      #     plugin_tweets_token: ${{ secrets.TWITTER_TOKEN }}
+      #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
 
@@ -690,7 +690,6 @@ jobs:
           use_mocked_data: yes
           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
           config_padding: 7%, 10%
-
 
 
       # ======================================================================================

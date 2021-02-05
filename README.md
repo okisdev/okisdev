@@ -12,7 +12,7 @@
 
 ---
 
-Use these techniques to explore:
+Use these techniques to explore the world:
 
 ![Vue.JS](https://img.shields.io/badge/-Vue.js-35495c.svg?&style=flat-square&logo=vue.js&logoColor=default)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=JavaScript&logoColor=default)
