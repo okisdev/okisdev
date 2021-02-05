@@ -652,25 +652,25 @@ jobs:
           base: ""
           plugin_projects: yes
 
-      # Metrics for "github" organization
-      - name: 💬 Organization metrics
-        uses: Harry-Yep/metrics@master
-        with:
-          filename: img/metrics/metrics.organization.svg
-          user: github
-          token: ${{ secrets.METRICS_BOT_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: header, repositories
+      # # Metrics for "github" organization
+      # - name: 💬 Organization metrics
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.organization.svg
+      #     user: github
+      #     token: ${{ secrets.METRICS_BOT_TOKEN }}
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     base: header, repositories
 
-      # Illustrate header hidden features with debug flags
-      # "--cakeday" will act as if it's your account birthday
-      # "--hireable" will act as if "Available for hire" is enabled
-      # "--halloween" will act as if it was halloween, changing the colors of calendars
-      - name: 💬 Header (hidden features)
-        uses: Harry-Yep/metrics@master
-        with:
-          filename: img/metrics/metrics.header.svg
-          token: ${{ secrets.METRICS_BOT_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: header
-          debug_flags: --cakeday --hireable --halloween
+      # # Illustrate header hidden features with debug flags
+      # # "--cakeday" will act as if it's your account birthday
+      # # "--hireable" will act as if "Available for hire" is enabled
+      # # "--halloween" will act as if it was halloween, changing the colors of calendars
+      # - name: 💬 Header (hidden features)
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.header.svg
+      #     token: ${{ secrets.METRICS_BOT_TOKEN }}
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     base: header
+      #     debug_flags: --cakeday --hireable --halloween
