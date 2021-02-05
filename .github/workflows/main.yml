@@ -488,26 +488,26 @@ jobs:
       # ======================================================================================
  
  
-      # 🗂️ Projects
+      # # 🗂️ Projects
 
-      # Display active projects
-      # Note that :
-      # - A "public_repo" scope is required
-      # - It uses user projects by default (those which are on your profile)
-      # - You can use repositories projects by providing a list of comma-separated endpoints
-      # - You can set "plugin_projects_limit" to 0 to display only "plugin_projects_repositories"
-      # - You'll need to enable "Track project progress" in your projects to display a progress bar
-      - name: 🗂️ Projects plugin
-        uses: Harry-Yep/metrics@master
-        with:
-          filename: img/metrics/metrics.plugin.projects.svg
-          token: ${{ secrets.METRICS_BOT_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: ""
-          plugin_projects: yes
-          plugin_projects_repositories: Harry-Yep/metrics/projects/1
-          plugin_projects_descriptions: yes
-          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # # Display active projects
+      # # Note that :
+      # # - A "public_repo" scope is required
+      # # - It uses user projects by default (those which are on your profile)
+      # # - You can use repositories projects by providing a list of comma-separated endpoints
+      # # - You can set "plugin_projects_limit" to 0 to display only "plugin_projects_repositories"
+      # # - You'll need to enable "Track project progress" in your projects to display a progress bar
+      # - name: 🗂️ Projects plugin
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.plugin.projects.svg
+      #     token: ${{ secrets.METRICS_BOT_TOKEN }}
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     base: ""
+      #     plugin_projects: yes
+      #     plugin_projects_repositories: Harry-Yep/metrics/projects/1
+      #     plugin_projects_descriptions: yes
+      #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
 
