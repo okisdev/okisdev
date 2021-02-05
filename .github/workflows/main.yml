@@ -3,7 +3,9 @@ on:
   schedule:
     - cron: "0 0-23/6 * * *"
   push:
-    branches: "master"
+    branches: 
+      - master
+      - main
   workflow_dispatch:
 jobs:
 
@@ -146,64 +148,6 @@ jobs:
           plugin_activity_filter: issue, pr, release, fork, star
           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
           config_padding: 7%, 20%
- 
- 
-      # ======================================================================================
-
- 
-      # 🌸 Anilist
-
-      # Anilist with onlyt favorites and currently watching anime sections
-      - name: 🌸 Anilist plugin (favorites and currently watching)
-        uses: Harry-Yep/metrics@master
-        with:
-          filename: img/metrics/metrics.plugin.anilist.svg
-          token: NOT_NEEDED
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          plugin_anilist: yes
-          plugin_anilist_medias: anime
-          plugin_anilist_sections: favorites, watching
-          plugin_anilist_limit: 1
-          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-      # Anilist with only favorites and currently reading manga sections
-      - name: 🌸 Anilist plugin (favorites and currently reading)
-        uses: Harry-Yep/metrics@master
-        with:
-          filename: img/metrics/metrics.plugin.anilist.manga.svg
-          token: NOT_NEEDED
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          plugin_anilist: yes
-          plugin_anilist_medias: manga
-          plugin_anilist_sections: favorites, reading
-          plugin_anilist_limit: 1
-          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-      # Anilist with only favorites characters section
-      - name: 🌸 Anilist plugin (favorites characters)
-        uses: Harry-Yep/metrics@master
-        with:
-          filename: img/metrics/metrics.plugin.anilist.characters.svg
-          token: NOT_NEEDED
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          plugin_anilist: yes
-          plugin_anilist_sections: characters
-          plugin_anilist_limit_characters: 22
-          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-          debug: yes
-
-      # Anilist plugin with all sections
-      - name: 🌸 Anilist plugin (complete)
-        uses: Harry-Yep/metrics@master
-        with:
-          filename: img/metrics/metrics.plugin.anilist.full.svg
-          token: NOT_NEEDED
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          plugin_anilist: yes
-          plugin_anilist_medias: anime, manga
-          plugin_anilist_sections: favorites, watching, reading, characters
-          plugin_anilist_limit: 1
-          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
  
 
       # ======================================================================================
