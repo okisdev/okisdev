@@ -16,21 +16,21 @@ I am ...
 
 Using these techniques to explore the world:
 
-![Vue.JS](https://img.shields.io/badge/-Vue.js-35495c.svg?&style=flat-square&logo=vue.js&logoColor=default)
+![Vue.JS](https://img.shields.io/badge/-Vue.js-35495c?&style=flat-square&logo=vue.js&logoColor=default)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=JavaScript&logoColor=default)
-![HTML5](https://img.shields.io/badge/-HTML5-edede8?style=flat-square&logo=HTML5&logoColor=default)
-![Java](https://img.shields.io/badge/-Java-ea3323?style=flat-square&logo=Java&logoColor=default)
-![Python](https://img.shields.io/badge/-Python-375a81?style=flat-square&logo=Python&logoColor=default)
-![MySQL](https://img.shields.io/badge/-MySQL-edede8?style=flat-square&logo=MySQL&logoColor=default)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white)
+![Java](https://img.shields.io/badge/-Java-EA3323?style=flat-square&logo=Java&logoColor=default)
+![Python](https://img.shields.io/badge/-Python-375A81?style=flat-square&logo=Python&logoColor=default)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white)
 ...
 
 Working with my friends:
 
 ![Intellij IDEA](https://img.shields.io/badge/-Intellij%20IDEA-red?style=flat-square&logo=Intellij%20Idea&logoColor=default)
-![Pycharm](https://img.shields.io/badge/-Pycharm-375a81?style=flat-square&logo=Pycharm&logoColor=default)
-![WebStorm](https://img.shields.io/badge/-WebStorm-51a5dd?style=flat-square&logo=Webstorm&logoColor=default)
-![VS Code](https://img.shields.io/badge/-VS%20Code-007acc?style=flat-square&logo=Visual%20Studio%20Code&logoColor=default)
-![Xcode](https://img.shields.io/badge/-Xcode-edede8?style=flat-square&logo=Xcode&logoColor=default)
+![Pycharm](https://img.shields.io/badge/-Pycharm-375A81?style=flat-square&logo=Pycharm&logoColor=default)
+![WebStorm](https://img.shields.io/badge/-WebStorm-51A5DD?style=flat-square&logo=Webstorm&logoColor=default)
+![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=Visual%20Studio%20Code&logoColor=white)
+![Xcode](https://img.shields.io/badge/-Xcode-1575F9?style=flat-square&logo=Xcode&logoColor=white)
 ...
 
 ---
