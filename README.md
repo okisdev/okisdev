@@ -30,6 +30,7 @@ Working with my friends:
 ![Pycharm](https://img.shields.io/badge/-Pycharm-375a81?style=flat-square&logo=Pycharm&logoColor=default)
 ![WebStorm](https://img.shields.io/badge/-WebStorm-51a5dd?style=flat-square&logo=Webstorm&logoColor=default)
 ![VS Code](https://img.shields.io/badge/-VS%20Code-007acc?style=flat-square&logo=Visual%20Studio%20Code&logoColor=default)
+![Xcode](https://img.shields.io/badge/-Xcode-edede8?style=flat-square&logo=Xcode&logoColor=default)
 ...
 
 ---
