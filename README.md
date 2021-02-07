@@ -27,7 +27,7 @@ Using these techniques to explore the world:
 Working with my friends:
 
 ![Intellij IDEA](https://img.shields.io/badge/-Intellij%20IDEA-red?style=flat-square&logo=Intellij%20Idea&logoColor=default)
-![Pycharm](https://img.shields.io/badge/-Pycharm-375A81?style=flat-square&logo=Pycharm&logoColor=default)
+![PyCharm](https://img.shields.io/badge/-PyCharm-375A81?style=flat-square&logo=PyCharm&logoColor=default)
 ![WebStorm](https://img.shields.io/badge/-WebStorm-51A5DD?style=flat-square&logo=Webstorm&logoColor=default)
 ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=Visual%20Studio%20Code&logoColor=white)
 ![Xcode](https://img.shields.io/badge/-Xcode-1575F9?style=flat-square&logo=Xcode&logoColor=white)
