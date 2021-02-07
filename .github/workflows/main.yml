@@ -46,19 +46,6 @@ jobs:
           config_timezone: Europe/London
           config_order: languages, pagespeed, habits, stargazers, stars
           config_padding: 6%, 10%
-
-      # # Classic template with header and repositories sections
-      # - name: Classic template
-      #   uses: Harry-Yep/metrics@master
-      #   with:
-      #     filename: img/metrics/metrics.classic.svg
-      #     token: ${{ secrets.METRICS_TOKEN }}
-      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
-      #     base: "header, repositories"
-      #     plugin_lines: yes
-      #     plugins_errors_fatal: yes
-      #     config_timezone: Europe/London
-      #     use_prebuilt_image: master
           
       - name: Personal metrics (anilist)
         uses: Harry-Yep/metrics@master # ⚠️ Using master to use unreleased features
@@ -88,17 +75,17 @@ jobs:
           plugin_projects_limit: 0
           debug: yes
           
-      # Classic template example
-      - name: Classic template
-        uses: Harry-Yep/metrics@master
-        with:
-          filename: img/metrics/metrics.classic.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: header, repositories
-          plugin_lines: yes
-          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-          use_prebuilt_image: master # ⚠️ DO NOT USE THIS OPTION, this is for pulling pre-built master image to make workflow faster 
+      # # Classic template example
+      # - name: Classic template
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.classic.svg
+      #     token: ${{ secrets.METRICS_TOKEN }}
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     base: header, repositories
+      #     plugin_lines: yes
+      #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      #     use_prebuilt_image: master # ⚠️ DO NOT USE THIS OPTION, this is for pulling pre-built master image to make workflow faster 
       
       # # Repository template example, with some plugins enabled
       # # Notice how repository name is passed through "query" option
