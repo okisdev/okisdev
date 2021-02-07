@@ -47,18 +47,18 @@ jobs:
           config_order: languages, pagespeed, habits, stargazers, stars
           config_padding: 6%, 10%
 
-      # Classic template with header and repositories sections
-      - name: Classic template
-        uses: Harry-Yep/metrics@master
-        with:
-          filename: img/metrics/metrics.classic.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: "header, repositories"
-          plugin_lines: yes
-          plugins_errors_fatal: yes
-          config_timezone: Europe/London
-          use_prebuilt_image: master
+      # # Classic template with header and repositories sections
+      # - name: Classic template
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.classic.svg
+      #     token: ${{ secrets.METRICS_TOKEN }}
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     base: "header, repositories"
+      #     plugin_lines: yes
+      #     plugins_errors_fatal: yes
+      #     config_timezone: Europe/London
+      #     use_prebuilt_image: master
           
       - name: Personal metrics (anilist)
         uses: Harry-Yep/metrics@master # ⚠️ Using master to use unreleased features
