@@ -869,32 +869,32 @@
                   
                     <div class="entry">
                       <span class="name">test</span>
-                      <div class="bar" style="width: 39.744%; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
-                      <span class="value">50%</span>
-                    </div>
-                  
-                    <div class="entry">
-                      <span class="name">undergraduate-study</span>
-                      <div class="bar" style="width: 17.592%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                      <span class="value">22%</span>
+                      <div class="bar" style="width: 36.088%; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                      <span class="value">45%</span>
                     </div>
                   
                     <div class="entry">
                       <span class="name">univariate-linear-regression</span>
-                      <div class="bar" style="width: 15.896%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                      <span class="value">20%</span>
+                      <div class="bar" style="width: 24.887999999999998%; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                      <span class="value">31%</span>
                     </div>
                   
                     <div class="entry">
-                      <span class="name">Harry-Yep</span>
-                      <div class="bar" style="width: 5.632000000000001%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
-                      <span class="value">7%</span>
+                      <span class="name">undergraduate-study</span>
+                      <div class="bar" style="width: 17.936%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                      <span class="value">22%</span>
                     </div>
                   
                     <div class="entry">
                       <span class="name">UG1_LC_AIML_Learning</span>
-                      <div class="bar" style="width: 0.8800000000000001%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                      <div class="bar" style="width: 0.8960000000000001%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                       <span class="value">1%</span>
+                    </div>
+                  
+                    <div class="entry">
+                      <span class="name">Unknown Project</span>
+                      <div class="bar" style="width: 0.184%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                      <span class="value">0%</span>
                     </div>
                   
                 
@@ -908,13 +908,13 @@
                   
                     <div class="entry">
                       <span class="name">Other</span>
-                      <div class="bar" style="width: 76.744%; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                      <div class="bar" style="width: 76.96799999999999%; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
                       <span class="value">96%</span>
                     </div>
                   
                     <div class="entry">
                       <span class="name">Java</span>
-                      <div class="bar" style="width: 2.536%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                      <div class="bar" style="width: 2.56%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                       <span class="value">3%</span>
                     </div>
                   
@@ -925,14 +925,14 @@
                     </div>
                   
                     <div class="entry">
-                      <span class="name">HTML</span>
+                      <span class="name">Text</span>
                       <div class="bar" style="width: 0.152%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                       <span class="value">0%</span>
                     </div>
                   
                     <div class="entry">
-                      <span class="name">Text</span>
-                      <div class="bar" style="width: 0.144%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                      <span class="name">JavaScript</span>
+                      <div class="bar" style="width: 0.09599999999999999%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                       <span class="value">0%</span>
                     </div>
                   
