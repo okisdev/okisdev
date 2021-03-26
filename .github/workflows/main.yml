@@ -1,663 +1,663 @@
-# name: GitHub metrics
-# on:
-#   schedule:
-#     - cron: "0 0-23/12 * * *"
-#   push:
-#     branches: 
-#       - master
-#       - main
-#   workflow_dispatch:
-# jobs:
+name: GitHub metrics
+on:
+  schedule:
+    - cron: "0 0-23/12 * * *"
+  push:
+    branches: 
+      - master
+      - main
+  workflow_dispatch:
+jobs:
 
-#   github-metrics-personal:
-#     runs-on: ubuntu-latest
-#     steps:
+  github-metrics-personal:
+    runs-on: ubuntu-latest
+    steps:
 
-#       - name: Personal metrics
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: header, repositories
-#           plugin_lines: yes
-#           plugin_isocalendar: yes
-#           config_timezone: Europe/London
-#           config_order: base.header, isocalendar, base.repositories
-#           config_padding: 10%
+      - name: Personal metrics
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: header, repositories
+          plugin_lines: yes
+          plugin_isocalendar: yes
+          config_timezone: Europe/London
+          config_order: base.header, isocalendar, base.repositories
+          config_padding: 10%
           
-#       - name: Personal metrics (additional)
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.additional.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_habits: yes
-#           plugin_habits_from: 200
-#           plugin_habits_facts: no
-#           plugin_habits_charts: yes
-#           plugin_languages: yes
-#           plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, c
-#           plugin_languages_skipped: Harry-Yep
-#           plugin_stargazers: yes
-#           plugin_stars: yes
-#           plugin_stars_limit: 3
-#           config_timezone: Europe/London
-#           config_order: languages, pagespeed, habits, stargazers, stars
-#           config_padding: 6%, 10%
+      - name: Personal metrics (additional)
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.additional.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_facts: no
+          plugin_habits_charts: yes
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, c
+          plugin_languages_skipped: Harry-Yep
+          plugin_stargazers: yes
+          plugin_stars: yes
+          plugin_stars_limit: 3
+          config_timezone: Europe/London
+          config_order: languages, pagespeed, habits, stargazers, stars
+          config_padding: 6%, 10%
           
-#       - name: Personal metrics (anilist)
-#         uses: Harry-Yep/metrics@master # ⚠️ Using master to use unreleased features
-#         with:
-#           filename: img/metrics/metrics.plugin.personal.anilist.svg
-#           token: NOT_NEEDED
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           plugin_anilist: yes
-#           plugin_anilist_medias: anime, manga
-#           plugin_anilist_sections: favorites, characters
-#           plugin_anilist_limit: 2
-#           plugin_anilist_limit_characters: 22
-#           config_padding: 6%, 10%
-#           use_prebuilt_image: master # ⚠️ DO NOT USE THIS OPTION!
+      - name: Personal metrics (anilist)
+        uses: Harry-Yep/metrics@master # ⚠️ Using master to use unreleased features
+        with:
+          filename: img/metrics/metrics.plugin.personal.anilist.svg
+          token: NOT_NEEDED
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          plugin_anilist: yes
+          plugin_anilist_medias: anime, manga
+          plugin_anilist_sections: favorites, characters
+          plugin_anilist_limit: 2
+          plugin_anilist_limit_characters: 22
+          config_padding: 6%, 10%
+          use_prebuilt_image: master # ⚠️ DO NOT USE THIS OPTION!
           
-#       - name: Personal projects
-#         uses: Harry-Yep/metrics@latest
-#         with:
-#           filename: img/metrics/metrics.projects.svg
-#           token: ${{ secrets.METRICS_BOT_TOKEN }} # ⚠️ This it not the same token, this one has "public_repo" scope
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           user: Harry-Yep
-#           base: ""
-#           plugin_projects: yes
-#           plugin_projects_repositories: Harry-Yep/metrics/projects/1
-#           plugin_projects_descriptions: yes
-#           plugin_projects_limit: 0
-#           debug: yes
+      - name: Personal projects
+        uses: Harry-Yep/metrics@latest
+        with:
+          filename: img/metrics/metrics.projects.svg
+          token: ${{ secrets.METRICS_BOT_TOKEN }} # ⚠️ This it not the same token, this one has "public_repo" scope
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: Harry-Yep
+          base: ""
+          plugin_projects: yes
+          plugin_projects_repositories: Harry-Yep/metrics/projects/1
+          plugin_projects_descriptions: yes
+          plugin_projects_limit: 0
+          debug: yes
           
-#       # # Classic template example
-#       # - name: Classic template
-#       #   uses: Harry-Yep/metrics@master
-#       #   with:
-#       #     filename: img/metrics/metrics.classic.svg
-#       #     token: ${{ secrets.METRICS_TOKEN }}
-#       #     committer_token: ${{ secrets.GITHUB_TOKEN }}
-#       #     base: header, repositories
-#       #     plugin_lines: yes
-#       #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-#       #     use_prebuilt_image: master # ⚠️ DO NOT USE THIS OPTION, this is for pulling pre-built master image to make workflow faster 
+      # # Classic template example
+      # - name: Classic template
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.classic.svg
+      #     token: ${{ secrets.METRICS_TOKEN }}
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     base: header, repositories
+      #     plugin_lines: yes
+      #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      #     use_prebuilt_image: master # ⚠️ DO NOT USE THIS OPTION, this is for pulling pre-built master image to make workflow faster 
       
-#       # # Repository template example, with some plugins enabled
-#       # # Notice how repository name is passed through "query" option
-#       # - name: Repository template
-#       #   uses: Harry-Yep/metrics@master
-#       #   with:
-#       #     template: repository
-#       #     filename: img/metrics/metrics.repository.svg
-#       #     token: ${{ secrets.METRICS_BOT_TOKEN }}
-#       #     committer_token: ${{ secrets.GITHUB_TOKEN }}
-#       #     user: Harry-Yep
-#       #     query: '{"repo":"metrics"}'
-#       #     plugin_lines: yes
-#       #     plugin_followup: yes
-#       #     plugin_projects: yes
-#       #     plugin_projects_repositories: Harry-Yep/metrics/projects/1
-#       #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # # Repository template example, with some plugins enabled
+      # # Notice how repository name is passed through "query" option
+      # - name: Repository template
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     template: repository
+      #     filename: img/metrics/metrics.repository.svg
+      #     token: ${{ secrets.METRICS_BOT_TOKEN }}
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     user: Harry-Yep
+      #     query: '{"repo":"metrics"}'
+      #     plugin_lines: yes
+      #     plugin_followup: yes
+      #     plugin_projects: yes
+      #     plugin_projects_repositories: Harry-Yep/metrics/projects/1
+      #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
   
-#       # Terminal template example
-#       - name: Terminal template
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           template: terminal
-#           filename: img/metrics/metrics.terminal.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: header, metadata
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # Terminal template example
+      - name: Terminal template
+        uses: Harry-Yep/metrics@master
+        with:
+          template: terminal
+          filename: img/metrics/metrics.terminal.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: header, metadata
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
       
-#       # ======================================================================================
+      # ======================================================================================
       
       
-#       # 📰 Recent activity
+      # 📰 Recent activity
 
-#       # Display recent activity
-#       - name: 📰 Activity plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.activity.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_activity: yes
-#           plugin_activity_limit: 7
-#           plugin_activity_days: 0
-#           plugin_activity_filter: issue, pr, release, fork, star
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-#           config_padding: 7%, 20%
+      # Display recent activity
+      - name: 📰 Activity plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.activity.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_activity: yes
+          plugin_activity_limit: 7
+          plugin_activity_days: 0
+          plugin_activity_filter: issue, pr, release, fork, star
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+          config_padding: 7%, 20%
  
 
-#       # ======================================================================================
+      # ======================================================================================
 
 
-#       # 🎟️ Follow-up of issues and pull requests
+      # 🎟️ Follow-up of issues and pull requests
 
-#       # Display ratio of open/closed/merged issues and pull requests
-#       - name: 🎟️ Follow-up plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.followup.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_followup: yes
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-
-#       # ======================================================================================
+      # Display ratio of open/closed/merged issues and pull requests
+      - name: 🎟️ Follow-up plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.followup.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_followup: yes
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # 🎫 Gists
-
-#       # Display gists metrics
-#       - name: 🎫 Gists plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.gists.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_gists: yes
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # ======================================================================================
 
 
-#       # ======================================================================================
+      # 🎫 Gists
+
+      # Display gists metrics
+      - name: 🎫 Gists plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.gists.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_gists: yes
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # 💡 Coding habits
+      # ======================================================================================
 
-#       # Display coding habits and recent activity (setup timezone for accurate metrics)
-#       - name: 💡 Habits plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.habits.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_habits: yes
-#           plugin_habits_facts: yes
-#           plugin_habits_charts: yes
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-#           config_timezone: Europe/London
+
+      # 💡 Coding habits
+
+      # Display coding habits and recent activity (setup timezone for accurate metrics)
+      - name: 💡 Habits plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.habits.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+          config_timezone: Europe/London
           
-#       # Display coding habits and recent activity, only facts section (setup timezone for accurate metrics)
-#       - name: 💡 Habits plugin (facts)
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.habits.facts.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_habits: yes
-#           plugin_habits_facts: yes
-#           plugin_habits_charts: no
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-#           config_timezone: Europe/London
+      # Display coding habits and recent activity, only facts section (setup timezone for accurate metrics)
+      - name: 💡 Habits plugin (facts)
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.habits.facts.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: no
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+          config_timezone: Europe/London
 
-#       # Display coding habits and recent activity, only charts section (setup timezone for accurate metrics)
-#       - name: 💡 Habits plugin (charts)
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.habits.charts.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_habits: yes
-#           plugin_habits_facts: no
-#           plugin_habits_charts: yes
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-#           config_timezone: Europe/London
+      # Display coding habits and recent activity, only charts section (setup timezone for accurate metrics)
+      - name: 💡 Habits plugin (charts)
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.habits.charts.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_habits: yes
+          plugin_habits_facts: no
+          plugin_habits_charts: yes
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+          config_timezone: Europe/London
  
  
-#       # ======================================================================================
+      # ======================================================================================
 
 
-#       # 📅 Isometric commit calendar
+      # 📅 Isometric commit calendar
 
-#       # Display isometric calendar (180 days)
-#       - name: 📅 Isocalendar plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.isocalendar.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_isocalendar: yes
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # Display isometric calendar (180 days)
+      - name: 📅 Isocalendar plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
-#       # Display isometric calendar (365 days)
-#       - name: 📅 Isocalendar plugin (full year)
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.isocalendar.fullyear.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_isocalendar: yes
-#           plugin_isocalendar_duration: full-year
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # Display isometric calendar (365 days)
+      - name: 📅 Isocalendar plugin (full year)
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.isocalendar.fullyear.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # ======================================================================================
+      # ======================================================================================
   
   
-#       # 🈷️ Most used languages
+      # 🈷️ Most used languages
 
-#       # Display most used languages (with some unwanted languages ignored)
-#       - name: 🈷️ Languages plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.languages.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_languages: yes
-#           plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # Display most used languages (with some unwanted languages ignored)
+      - name: 🈷️ Languages plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
           
-#       # 🈷️ Display most used languages (with some unwanted languages ignored, with details)
-#       - name: 🈷️ Languages plugin (detailed)
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.languages.details.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_languages: yes
-#           plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
-#           plugin_languages_details: bytes-size, percentage
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # 🈷️ Display most used languages (with some unwanted languages ignored, with details)
+      - name: 🈷️ Languages plugin (detailed)
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.languages.details.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
+          plugin_languages_details: bytes-size, percentage
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # ======================================================================================
+      # ======================================================================================
       
       
-#       # 👨‍💻 Lines of code changed
+      # 👨‍💻 Lines of code changed
 
-#       # Display number of line changed (this is part of base content "repositories" section, so you need to enable it)
-#       - name: 👨‍💻 Lines plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.lines.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: repositories
-#           plugin_lines: yes
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-
-#       # ======================================================================================
+      # Display number of line changed (this is part of base content "repositories" section, so you need to enable it)
+      - name: 👨‍💻 Lines plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.lines.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: repositories
+          plugin_lines: yes
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # ⏱️ Website performances
-
-#       # Google PageSpeed insight website audit (token option but advised)
-#       # This use website linked to GitHub account
-#       - name: ⏱️ PageSpeed plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.pagespeed.svg
-#           token: NOT_NEEDED
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           plugin_pagespeed: yes
-#           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-#           plugin_pagespeed_url: ${{ secrets.WEBSITE_URL }}
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-#       # Google PageSpeed insight website audit, with additional metrics (token option but advised)
-#       # This use website linked to GitHub account
-#       - name: ⏱️ PageSpeed plugin (detailed)
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.pagespeed.detailed.svg
-#           token: NOT_NEEDED
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           plugin_pagespeed: yes
-#           plugin_pagespeed_detailed: yes
-#           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-#           plugin_pagespeed_url: ${{ secrets.WEBSITE_URL }}
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-#       # Google PageSpeed insight website audit, with a screenshot of your website (token option but advised)
-#       # This use website linked to GitHub account
-#       - name: ⏱️ PageSpeed plugin (screenshot)
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.pagespeed.screenshot.svg
-#           token: NOT_NEEDED
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           plugin_pagespeed: yes
-#           plugin_pagespeed_screenshot: yes
-#           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-#           plugin_pagespeed_url: ${{ secrets.WEBSITE_URL }}
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # ======================================================================================
 
 
-#       # ======================================================================================
+      # ⏱️ Website performances
+
+      # Google PageSpeed insight website audit (token option but advised)
+      # This use website linked to GitHub account
+      - name: ⏱️ PageSpeed plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.pagespeed.svg
+          token: NOT_NEEDED
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          plugin_pagespeed: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: ${{ secrets.WEBSITE_URL }}
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+
+      # Google PageSpeed insight website audit, with additional metrics (token option but advised)
+      # This use website linked to GitHub account
+      - name: ⏱️ PageSpeed plugin (detailed)
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.pagespeed.detailed.svg
+          token: NOT_NEEDED
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          plugin_pagespeed: yes
+          plugin_pagespeed_detailed: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: ${{ secrets.WEBSITE_URL }}
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+
+      # Google PageSpeed insight website audit, with a screenshot of your website (token option but advised)
+      # This use website linked to GitHub account
+      - name: ⏱️ PageSpeed plugin (screenshot)
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.pagespeed.screenshot.svg
+          token: NOT_NEEDED
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          plugin_pagespeed: yes
+          plugin_pagespeed_screenshot: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: ${{ secrets.WEBSITE_URL }}
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # # 🎼 Music plugin
-
-#       # # Display random tracks from given embed playlist
-#       # # Note that :
-#       # # - "plugin_music_mode" and "plugin_music_provider" are both optional as they're deduced from "plugin_music_playlist"
-#       # # - "plugin_music_token" is not needed since it uses pupeeter to retrieve tracks
-#       # - name: 🎼 Music plugin (playlist)
-#       #   uses: Harry-Yep/metrics@master
-#       #   with:
-#       #     filename: img/metrics/metrics.plugin.music.playlist.svg
-#       #     token: NOT_NEEDED
-#       #     committer_token: ${{ secrets.GITHUB_TOKEN }}
-#       #     plugin_music: yes
-#       #     plugin_music_playlist: ${{ secrets.MUSIC_PLAYLIST }}
-#       #     plugin_music_limit: 2
-#       #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-#       # # Display recently played music
-#       # # Note that in this mode "plugin_music_mode", "plugin_music_provider" and "plugin_music_token" are all required
-#       # - name: 🎼 Music plugin (recent)
-#       #   uses: Harry-Yep/metrics@master
-#       #   with:
-#       #     filename: img/metrics/metrics.plugin.music.recent.svg
-#       #     token: NOT_NEEDED
-#       #     committer_token: ${{ secrets.GITHUB_TOKEN }}
-#       #     plugin_music: yes
-#       #     plugin_music_provider: apple
-#       #     plugin_music_mode: recent
-#       #     plugin_music_token: ${{ secrets.APPLE_TOKENS }}
-#       #     plugin_music_limit: 2
-#       #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # ======================================================================================
 
 
+      # # 🎼 Music plugin
 
-#       # ======================================================================================
+      # # Display random tracks from given embed playlist
+      # # Note that :
+      # # - "plugin_music_mode" and "plugin_music_provider" are both optional as they're deduced from "plugin_music_playlist"
+      # # - "plugin_music_token" is not needed since it uses pupeeter to retrieve tracks
+      # - name: 🎼 Music plugin (playlist)
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.plugin.music.playlist.svg
+      #     token: NOT_NEEDED
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     plugin_music: yes
+      #     plugin_music_playlist: ${{ secrets.MUSIC_PLAYLIST }}
+      #     plugin_music_limit: 2
+      #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
-
-#       # 🧑‍🤝‍🧑 People plugin
-
-#       # Display followers and followed users
-#       # Note that to respect privacy of users (as their faces could be displayed on every fork of this repository
-#       #   and on Harry-Yep/metrics), identicons are used instead of their avatar, but you probably want to disable this
-#       - name: 🧑‍🤝‍🧑 People plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.people.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_people: yes
-#           plugin_people_identicons: yes
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-#       # Display followers
-#       - name: 🧑‍🤝‍🧑 People plugin (followers)
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.people.followers.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_people: yes
-#           plugin_people_identicons: yes
-#           plugin_people_types: followers
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-#       # Display followed users
-#       - name: 🧑‍🤝‍🧑 People plugin (following)
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.people.following.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_people: yes
-#           plugin_people_identicons: yes
-#           plugin_people_types: following
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-#       # Special thanks to listed users
-#       - name: 🧑‍🤝‍🧑 People plugin (special thanks)
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.people.thanks.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_people: yes
-#           plugin_people_types: thanks
-#           plugin_people_thanks: Harry-Yep, botlighter, octocat
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-#       # Repository people
-#       - name: 🧑‍🤝‍🧑 People plugin (repository template)
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.people.repository.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           template: repository
-#           query: '{"repo":"metrics"}'
-#           plugin_people: yes
-#           plugin_people_identicons: yes
-#           plugin_people_types: contributors, stargazers, watchers, sponsors
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # # Display recently played music
+      # # Note that in this mode "plugin_music_mode", "plugin_music_provider" and "plugin_music_token" are all required
+      # - name: 🎼 Music plugin (recent)
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.plugin.music.recent.svg
+      #     token: NOT_NEEDED
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     plugin_music: yes
+      #     plugin_music_provider: apple
+      #     plugin_music_mode: recent
+      #     plugin_music_token: ${{ secrets.APPLE_TOKENS }}
+      #     plugin_music_limit: 2
+      #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # ======================================================================================
+
+      # ======================================================================================
 
 
-#       # ✒️ Recent posts
+      # 🧑‍🤝‍🧑 People plugin
 
-#       # Display recent posts
-#       - name: ✒️ Posts plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.posts.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_posts: yes
-#           plugin_posts_source: dev.to
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # Display followers and followed users
+      # Note that to respect privacy of users (as their faces could be displayed on every fork of this repository
+      #   and on Harry-Yep/metrics), identicons are used instead of their avatar, but you probably want to disable this
+      - name: 🧑‍🤝‍🧑 People plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.people.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_people: yes
+          plugin_people_identicons: yes
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+
+      # Display followers
+      - name: 🧑‍🤝‍🧑 People plugin (followers)
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.people.followers.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_people: yes
+          plugin_people_identicons: yes
+          plugin_people_types: followers
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+
+      # Display followed users
+      - name: 🧑‍🤝‍🧑 People plugin (following)
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.people.following.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_people: yes
+          plugin_people_identicons: yes
+          plugin_people_types: following
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+
+      # Special thanks to listed users
+      - name: 🧑‍🤝‍🧑 People plugin (special thanks)
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.people.thanks.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_people: yes
+          plugin_people_types: thanks
+          plugin_people_thanks: Harry-Yep, botlighter, octocat
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+
+      # Repository people
+      - name: 🧑‍🤝‍🧑 People plugin (repository template)
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.people.repository.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          template: repository
+          query: '{"repo":"metrics"}'
+          plugin_people: yes
+          plugin_people_identicons: yes
+          plugin_people_types: contributors, stargazers, watchers, sponsors
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # ======================================================================================
+      # ======================================================================================
+
+
+      # ✒️ Recent posts
+
+      # Display recent posts
+      - name: ✒️ Posts plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.posts.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_posts: yes
+          plugin_posts_source: dev.to
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+
+
+      # ======================================================================================
  
  
-#       # # 🗂️ Projects
+      # # 🗂️ Projects
 
-#       # # Display active projects
-#       # # Note that :
-#       # # - A "public_repo" scope is required
-#       # # - It uses user projects by default (those which are on your profile)
-#       # # - You can use repositories projects by providing a list of comma-separated endpoints
-#       # # - You can set "plugin_projects_limit" to 0 to display only "plugin_projects_repositories"
-#       # # - You'll need to enable "Track project progress" in your projects to display a progress bar
-#       # - name: 🗂️ Projects plugin
-#       #   uses: Harry-Yep/metrics@master
-#       #   with:
-#       #     filename: img/metrics/metrics.plugin.projects.svg
-#       #     token: ${{ secrets.METRICS_BOT_TOKEN }}
-#       #     committer_token: ${{ secrets.GITHUB_TOKEN }}
-#       #     base: ""
-#       #     plugin_projects: yes
-#       #     plugin_projects_repositories: Harry-Yep/metrics/projects/1
-#       #     plugin_projects_descriptions: yes
-#       #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-
-
-#       # ======================================================================================
+      # # Display active projects
+      # # Note that :
+      # # - A "public_repo" scope is required
+      # # - It uses user projects by default (those which are on your profile)
+      # # - You can use repositories projects by providing a list of comma-separated endpoints
+      # # - You can set "plugin_projects_limit" to 0 to display only "plugin_projects_repositories"
+      # # - You'll need to enable "Track project progress" in your projects to display a progress bar
+      # - name: 🗂️ Projects plugin
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.plugin.projects.svg
+      #     token: ${{ secrets.METRICS_BOT_TOKEN }}
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     base: ""
+      #     plugin_projects: yes
+      #     plugin_projects_repositories: Harry-Yep/metrics/projects/1
+      #     plugin_projects_descriptions: yes
+      #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # ✨ Stargazers over last weeks
 
-#       # Display stargazers evolution over last weeks
-#       - name: ✨ Stargazers plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.stargazers.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_stargazers: yes
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # ======================================================================================
 
 
-#       # ======================================================================================
+      # ✨ Stargazers over last weeks
+
+      # Display stargazers evolution over last weeks
+      - name: ✨ Stargazers plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.stargazers.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_stargazers: yes
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+
+
+      # ======================================================================================
  
  
-#       # 🌟 Recently starred repositories
+      # 🌟 Recently starred repositories
 
-#       # Display latest starred repositories
-#       - name: 🌟 Stars plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.stars.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_stars: yes
-#           plugin_stars_limit: 2
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-
-
-#       # ======================================================================================
+      # Display latest starred repositories
+      - name: 🌟 Stars plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.stars.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_stars: yes
+          plugin_stars_limit: 2
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # 📌 Starred topics
-
-#       # Display starred topics (as labels)
-#       - name: 📌 Topics plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.topics.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_topics: yes
-#           plugin_topics_limit: 12
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # ======================================================================================
 
 
-#       # Display starred topics (as icons)
-#       # Note that only topics with an icon will be displayed (most of majors topics have one though)
-#       - name: 📌 Topics plugin (mastered)
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.topics.mastered.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_topics: yes
-#           plugin_topics_limit: 0
-#           plugin_topics_mode: mastered
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # 📌 Starred topics
+
+      # Display starred topics (as labels)
+      - name: 📌 Topics plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.topics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_topics: yes
+          plugin_topics_limit: 12
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # ======================================================================================
+      # Display starred topics (as icons)
+      # Note that only topics with an icon will be displayed (most of majors topics have one though)
+      - name: 📌 Topics plugin (mastered)
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.topics.mastered.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_topics: yes
+          plugin_topics_limit: 0
+          plugin_topics_mode: mastered
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # 🧮 Repositories traffic
-
-#       # Display number of repositories views (this is part of base content "repositories" section, so you need to enable it)
-#       # Note that a "repo" scope is required
-#       - name: 🧮 Traffic plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.traffic.svg
-#           token: ${{ secrets.METRICS_BOT_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: repositories
-#           plugin_traffic: yes
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # ======================================================================================
 
 
-#       # ======================================================================================
+      # 🧮 Repositories traffic
+
+      # Display number of repositories views (this is part of base content "repositories" section, so you need to enable it)
+      # Note that a "repo" scope is required
+      - name: 🧮 Traffic plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.traffic.svg
+          token: ${{ secrets.METRICS_BOT_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: repositories
+          plugin_traffic: yes
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # # 🐤 Latest tweets
-
-#       # # Display your latest tweets (token required)
-#       # # Don't forget to update your GitHub profile with your twitter username
-#       # - name: 🐤 Tweets plugin
-#       #   uses: Harry-Yep/metrics@master
-#       #   with:
-#       #     filename: img/metrics/metrics.plugin.tweets.svg
-#       #     token: NOT_NEEDED
-#       #     committer_token: ${{ secrets.GITHUB_TOKEN }}
-#       #     plugin_tweets: yes
-#       #     plugin_tweets_token: ${{ secrets.TWITTER_TOKEN }}
-#       #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+      # ======================================================================================
 
 
+      # # 🐤 Latest tweets
 
-#       # ======================================================================================
-
-
-#       # ⏰ WakaTime plugin
-
-#       # Display your wakatime metrics
-#       - name: ⏰ WakaTime plugin
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.wakatime.svg
-#           token: NOT_NEEDED
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           plugin_wakatime: yes
-#           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-#           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
-#           use_mocked_data: yes
-#           plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
-#           config_padding: 7%, 10%
+      # # Display your latest tweets (token required)
+      # # Don't forget to update your GitHub profile with your twitter username
+      # - name: 🐤 Tweets plugin
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.plugin.tweets.svg
+      #     token: NOT_NEEDED
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     plugin_tweets: yes
+      #     plugin_tweets_token: ${{ secrets.TWITTER_TOKEN }}
+      #     plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
 
 
-#       # ======================================================================================
+
+      # ======================================================================================
 
 
-#       # 💬 Others
+      # ⏰ WakaTime plugin
 
-#       # Illustrate plugin errors :
-#       # ${{ secrets.METRICS_TOKEN }} is missing "public_repo" scope, which is required for "plugin_projects"
-#       - name: 💬 Plugin error example
-#         uses: Harry-Yep/metrics@master
-#         with:
-#           filename: img/metrics/metrics.plugin.error.svg
-#           token: ${{ secrets.METRICS_TOKEN }}
-#           committer_token: ${{ secrets.GITHUB_TOKEN }}
-#           base: ""
-#           plugin_projects: yes
+      # Display your wakatime metrics
+      - name: ⏰ WakaTime plugin
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.wakatime.svg
+          token: NOT_NEEDED
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          plugin_wakatime: yes
+          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+          use_mocked_data: yes
+          plugins_errors_fatal: ${{ github.repository == 'Harry-Yep/Harry-Yep' }}
+          config_padding: 7%, 10%
 
-#       # # Metrics for "github" organization
-#       # - name: 💬 Organization metrics
-#       #   uses: Harry-Yep/metrics@master
-#       #   with:
-#       #     filename: img/metrics/metrics.organization.svg
-#       #     user: github
-#       #     token: ${{ secrets.METRICS_BOT_TOKEN }}
-#       #     committer_token: ${{ secrets.GITHUB_TOKEN }}
-#       #     base: header, repositories
 
-#       # # Illustrate header hidden features with debug flags
-#       # # "--cakeday" will act as if it's your account birthday
-#       # # "--hireable" will act as if "Available for hire" is enabled
-#       # # "--halloween" will act as if it was halloween, changing the colors of calendars
-#       # - name: 💬 Header (hidden features)
-#       #   uses: Harry-Yep/metrics@master
-#       #   with:
-#       #     filename: img/metrics/metrics.header.svg
-#       #     token: ${{ secrets.METRICS_BOT_TOKEN }}
-#       #     committer_token: ${{ secrets.GITHUB_TOKEN }}
-#       #     base: header
-#       #     debug_flags: --cakeday --hireable --halloween
+      # ======================================================================================
+
+
+      # 💬 Others
+
+      # Illustrate plugin errors :
+      # ${{ secrets.METRICS_TOKEN }} is missing "public_repo" scope, which is required for "plugin_projects"
+      - name: 💬 Plugin error example
+        uses: Harry-Yep/metrics@master
+        with:
+          filename: img/metrics/metrics.plugin.error.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_projects: yes
+
+      # # Metrics for "github" organization
+      # - name: 💬 Organization metrics
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.organization.svg
+      #     user: github
+      #     token: ${{ secrets.METRICS_BOT_TOKEN }}
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     base: header, repositories
+
+      # # Illustrate header hidden features with debug flags
+      # # "--cakeday" will act as if it's your account birthday
+      # # "--hireable" will act as if "Available for hire" is enabled
+      # # "--halloween" will act as if it was halloween, changing the colors of calendars
+      # - name: 💬 Header (hidden features)
+      #   uses: Harry-Yep/metrics@master
+      #   with:
+      #     filename: img/metrics/metrics.header.svg
+      #     token: ${{ secrets.METRICS_BOT_TOKEN }}
+      #     committer_token: ${{ secrets.GITHUB_TOKEN }}
+      #     base: header
+      #     debug_flags: --cakeday --hireable --halloween
