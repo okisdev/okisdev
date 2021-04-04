@@ -47,11 +47,11 @@ jobs:
           plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, c
           plugin_languages_skipped: Harry-Yep
           plugin_languages_details: bytes-size, percentage
-          plugin_stargazers: yes
-          plugin_stars: yes
-          plugin_stars_limit: 3
-          plugin_topics: yes
-          plugin_topics_limit: 0
-          plugin_topics_mode: mastered
+          # plugin_stargazers: yes
+          # plugin_stars: yes
+          # plugin_stars_limit: 3
+          # plugin_topics: yes
+          # plugin_topics_limit: 0
+          # plugin_topics_mode: mastered
           config_order: base.header, languages, pagespeed, habits, stargazers, stars
           config_padding: 6%, 10%
