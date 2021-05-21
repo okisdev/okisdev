@@ -22,6 +22,7 @@ Using these techniques to explore the world:
 ![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-375A81?style=flat-square&logo=Python&logoColor=default)
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-29597F?style=flat-square&logo=PostgreSQL&logoColor=default)
 ...
 
 Working with my friends:
