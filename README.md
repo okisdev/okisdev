@@ -5,7 +5,7 @@
 
 ## Hi, [Harry Yep](https://www.harrly.com) is here.
 
-> Fresh off the Boat. && Nice to meet you.
+> Fresh Off the Boat. && Nice to meet you.
 
 - Student. (Lifetime)
 - Dev.
