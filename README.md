@@ -16,11 +16,12 @@ I am ...
 
 Using these techniques to explore the world:
 
+![Swift](https://img.shields.io/badge/-Swift-ec4736?&style=flat-square&logo=Swift&logoColor=white)
+![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=JavaScript&logoColor=default)
 ![Vue.JS](https://img.shields.io/badge/-Vue.js-35495c?&style=flat-square&logo=vue.js&logoColor=default)
 ![React.JS](https://img.shields.io/badge/-React.js-35495c?&style=flat-square&logo=React&logoColor=default)
-![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=JavaScript&logoColor=default)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white)
-![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-375A81?style=flat-square&logo=Python&logoColor=default)
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-29597F?style=flat-square&logo=PostgreSQL&logoColor=default)
