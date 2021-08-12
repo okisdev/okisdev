@@ -46,7 +46,7 @@ You can also find me here:
 
 - [Wesbite](https://www.harrly.com)
 - [Photo](https://photo.harrly.com)
-- [About](https://blog.harrly.com/about)
+- [About](https://www.harrly.com/about)
 - [Contact](mailto:hi@harrly.com)
 
 ---
