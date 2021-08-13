@@ -3,7 +3,7 @@
 </head>
 
 
-## Hi, [Harry Yep](https://www.harrly.com) is here.
+## Hi, [Harry Yep](https://harryyep.com) is here.
 
 > Fresh Off the Boat. && Nice to meet you.
 
@@ -37,12 +37,6 @@ Working with my friends:
 ...
 
 ---
-
-| About | Me |
-| - | - |
-| ![Metrics](./img/metrics/metrics.svg) | ![Metrics](./img/metrics/metrics.additional.svg) |
-
-You can also find me here:
 
 - [Wesbite](https://www.harrly.com)
 - [Photo](https://photo.harrly.com)
