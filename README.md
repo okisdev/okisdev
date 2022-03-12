@@ -40,8 +40,10 @@ Working with my friends:
 ---
 
 - [Wesbite](https://www.harrly.com)
+- [Blog](https://blog.harrly.com)
 - [Photo](https://photo.harrly.com)
-- [About](https://www.harrly.com/about)
+- [Documentation](https://docs.harrly.com)
+- [Status](https://status.harrly.com)
 - [Contact](mailto:hi@harrly.com)
 
 ---
