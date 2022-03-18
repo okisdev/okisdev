@@ -19,6 +19,7 @@ Using these techniques to explore the world:
 ![Swift](https://img.shields.io/badge/-Swift-ec4736?&style=flat-square&logo=Swift&logoColor=white)
 ![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=JavaScript&logoColor=default)
+![TypeScript](https://img.shields.io/badge/-TypeScript-white?style=flat-square&logo=TypeScript&logoColor=default)
 ![Vue.JS](https://img.shields.io/badge/-Vue.js-35495c?&style=flat-square&logo=vue.js&logoColor=default)
 ![React.JS](https://img.shields.io/badge/-React.js-35495c?&style=flat-square&logo=React&logoColor=default)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white)
