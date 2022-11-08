@@ -5,14 +5,12 @@
 
 ## Hi, [Harry Yep](https://harryyep.com) is here.
 
-> Fresh Off the Boat. && Nice to meet you.
+> Have a nice day! :)
 
-- Student. (Lifetime)
-- Dev.
+- Student.
+- Developer.
 
----
-
-I am ...
+### Personally
 
 Using these techniques to explore the world:
 
@@ -38,14 +36,14 @@ Working with my friends:
 ![Xcode](https://img.shields.io/badge/-Xcode-1575F9?style=flat-square&logo=Xcode&logoColor=white)
 ...
 
----
+### Externally
 
-- [Wesbite](https://www.harrly.com)
-- [Blog](https://blog.harrly.com)
-- [Photo](https://photo.harrly.com)
-- [Documentation](https://docs.harrly.com)
-- [Status](https://status.harrly.com)
-- [Contact](mailto:hi@harrly.com)
+- [web](https://www.harrly.com)
+- [blog](https://www.harrly.com/blog)
+- [photo](https://www.harrly.com/photo)
+- [docs](https://docs.okis.dev)
+- [status](https://status.harrly.com)
+- [email](mailto:hi@okis.dev)
 
 ---
 
