@@ -1,6 +1,6 @@
 ### Hola. 👋
 
-I am Harry Yep. Developer, also life time student.
+I am Harry Yep. Developer, also a lifetime student. See more on my [website](https://harryyep.com).
 
 [![wakatime](https://wakatime.com/badge/user/b17de13b-e637-49f9-9a70-4bf6d5af8f1b.svg?style=flat-square)](https://github.com/okisdev)
 
