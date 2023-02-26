@@ -1,8 +1,10 @@
 ### Hola. 👋
 
-I am Harry Yep. Developer, also a lifetime student. See more on my [website](https://harryyep.com).
+I am Harry Yep. [![wakatime](https://wakatime.com/badge/user/b17de13b-e637-49f9-9a70-4bf6d5af8f1b.svg?style=flat-square)](https://github.com/okisdev)
 
-[![wakatime](https://wakatime.com/badge/user/b17de13b-e637-49f9-9a70-4bf6d5af8f1b.svg?style=flat-square)](https://github.com/okisdev)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Merriweather&pause=1000&color=AECEFF&vCenter=true&width=300&height=20&lines=Student;Developer)](https://git.io/typing-svg)
+
+See more on my [website](https://harryyep.com).
 
 ## 👻 Technologies
 
